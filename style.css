@@ -99,6 +99,7 @@ nav a{
     height: fit-content;
     width: fit-content;
     gap: 56px;
+    z-index: 6;
 }
 
 .social_links a, .social_links2 a, .social_links img, .social_links2 img{
@@ -267,7 +268,7 @@ nav a{
     align-items: center;
     width: 100vw;
     height: fit-content;
-    padding: 56px 0;
+    padding: 72px 0;
     position: relative;
     background-color: #373D20;
     color: #FFFFFF;
@@ -284,10 +285,10 @@ nav a{
 
 #teams{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 60vw;
     height: fit-content;
+    gap: 200px;
 }
 
 #teams img{
@@ -298,7 +299,6 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80vw;
     height: fit-content;
     overflow-x: hidden;
     gap: 104px;
@@ -754,7 +754,6 @@ a, p{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 90vw;
         height: fit-content;
     }
     
@@ -766,7 +765,6 @@ a, p{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 90vw;
         height: fit-content;
     }
     
@@ -952,7 +950,6 @@ a, p{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 90vw;
         height: fit-content;
     }
     
@@ -964,7 +961,6 @@ a, p{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 90vw;
         height: fit-content;
     }
     

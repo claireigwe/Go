@@ -63,11 +63,11 @@
 
             <section class="section3 team_container">
                 <h4>I've worked on teams building the future...</h4>
-                <section id="teams">
-                    <img src="Image/hertechtrail.png">
-                    <img src="Image/ishopeco.png">
-                    <img src="Image/houseafrica.png">
-                </section>
+                    <section id="teams">
+                        <img src="Image/hertechtrail.png">
+                        <img src="Image/ishopeco.png">
+                        <img src="Image/houseafrica.png">
+                    </section>
             </section>
 
             <section id="case_titles">
@@ -173,13 +173,15 @@
 
             <section class="section3 team_container">
                 <h4>My Product Design Stack...</h4>
-                <section id="teams2">
+                <marquee scrollamount="4">
+                    <section id="teams2">
                     <img src="Image/Frame 2.png">
                     <img src="Image/Frame 3.png">
                     <img src="Image/Frame 1.png">
                     <img src="Image/Frame 4.png">
                     <img src="Image/Maze.png">
-                </section>
+                    </section>
+                </marquee>
             </section>
 
         </section>
@@ -188,14 +190,14 @@
         <footer>
             <section class="title4">
                 <h2>Let's Build Magic, Together</h2>
-                <p>I am always open to building better user interfaces and experience for your products. Reach out anytime.</p>
+                <p>I always love to discuss and design better user interfaces and experience for your products. Reach out.</p>
             </section>
 
             <section class="social_links2">
-                <a><img src="Image/mail.png" alt="email icon"></a>
-                <a><img src="Image/behance.png" alt="behance icon"></a>
-                <a><img src="Image/linkedin.png" alt="linkedin icon"></a>
-                <a><img src="Image/twitter.png" alt="twitter icon"></a>
+                <a href="mailto:contact@claireigwe.com"><img src="Image/mail.png" alt="email icon"></a>
+                <a href="https://www.behance.net/claireigwe2"><img src="Image/behance.png" alt="behance icon"></a>
+                <a href="https://www.linkedin.com/in/claire-igwe"><img src="Image/linkedin.png" alt="linkedin icon"></a>
+                <a href="https://www.twitter.com/claire_uxdesign"><img src="Image/twitter.png" alt="twitter icon"></a>
             </section>
 
             <section class="banner1"></section>
@@ -222,47 +224,6 @@
                }
                }
                }}
-                
-               // Get all elements with the ID "team2"
-const team2Elements = document.querySelectorAll('#team2');
-
-// Get the container element
-const container = document.querySelector('.container');
-
-// Set the total width of all "team2" elements
-let totalWidth = 0;
-team2Elements.forEach(element => {
-  totalWidth += element.offsetWidth;
-});
-
-// Clone the "team2" elements and append them to the container
-let clones = '';
-team2Elements.forEach(element => {
-  clones += element.outerHTML;
-});
-container.innerHTML += clones;
-
-// Set the initial left position of the container
-let leftPos = 0;
-
-// Set the animation function to run in a loop
-function animate() {
-  // Calculate the new left position
-  leftPos -= 1;
-  if (leftPos < -totalWidth) {
-    leftPos = 0;
-  }
-
-  // Set the left position of the container
-  container.style.left = leftPos + 'px';
-
-  // Call the animation function again
-  requestAnimationFrame(animate);
-}
-
-// Start the animation
-animate();
-
                
         </script
 
