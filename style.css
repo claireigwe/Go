@@ -12,12 +12,13 @@ body{
     overflow-x: hidden;
     background-color: #FDFFFF;
     color: #222222;
+    position: relative;
 }
 
 
 header, body{
     height: fit-content;
-    width: fit-content;
+    width: max-content;
     padding: 0;
     margin: 0;
 }
@@ -183,7 +184,6 @@ nav a{
     justify-content: start;
     height: fit-content;
     width: fit-content;
-    gap: 80px;
     padding: 48px 0 104px 0;
 }
 
@@ -192,9 +192,9 @@ nav a{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: calc(100vh - 64px);
+    height: fit-content;
     max-height: 900px;
-    padding: 0 10%;
+    padding: 80px 10%;
     gap: 80px;
 }
 
@@ -203,7 +203,7 @@ nav a{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 64px);
     background: linear-gradient(
         to top,
         #FFFFFF00 0%,
@@ -221,6 +221,7 @@ nav a{
     align-items: center;
     width: auto;
     height: 100%;
+    margin: 0;
 }
 
 .section1_background1{
@@ -228,7 +229,7 @@ nav a{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 64px);
     background-color:#373D20;
 }
 
@@ -246,6 +247,7 @@ nav a{
     align-items: center;
     width: 80%;
     height: auto;
+    margin: 0;
 }
 
 .reverse{
@@ -478,6 +480,13 @@ h2{
     line-height: 75px;
 }
 
+#footer_heading{
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 75px;
+    text-align: left;
+}
+
 h3{
     font-size: 40px;
     font-weight: 800;
@@ -488,7 +497,7 @@ h3{
 h4{
     font-size: 18px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 32px;
 }
 
 h5{
@@ -518,11 +527,11 @@ a, p{
     height: fit-content;
 }
 
-.hero_image{
+.hero_image_clothesxo{
     max-height: calc(100vh - 264px);
     min-height: calc(100vh - 264px);
     width: 100vw;
-    background-image: url(Image/clothesxo_case_mock.png);
+    background-image: url(Images/clothesxo/mock.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -558,6 +567,21 @@ a, p{
     padding: 0 10vw;
 }
 
+.cards1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: 100vw;
+    padding: 0 10vw;
+    gap: 48px;
+    background-image: url(Images/clothesxo/solutions.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+
 .cards section{
     display: flex;
     flex-direction: column;
@@ -570,6 +594,7 @@ a, p{
     gap: 12px;
     background-color: #EFF1ED;
 }
+
 
 .case_section1, .case_section2, .case_section3{
     display: flex;
@@ -611,7 +636,7 @@ a, p{
 }
 
 .case_section1, .case_section3{
-    height: calc(100vh - 64px);
+    height: fit-content;
     justify-content: start;
 }
 
@@ -632,9 +657,11 @@ a, p{
     align-items: center;
     justify-content: stretch;
     gap: 32px;
+    display: relative;
 }
 
 .case_section6 .hero_title{
+    text-align: center;
     max-width: 500px;
     padding: 0;
 }
@@ -678,14 +705,26 @@ a, p{
     padding-left: 10vw;
 }
 
+.text4{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    text-align: left;
+    padding-right: 10vw;
+    width: fit-content;
+    max-width: 600px;
+}
 
-.text1 h3, .text2 h3, .text3 h3{
+
+.text1 h3, .text2 h3, .text3 h3, .text4 h3{
     font-size: 32px;
     font-weight: 40px;
 }
 
 .text1{
     max-width: 600px;
+    
 }
 
 .text2{
@@ -718,6 +757,12 @@ a, p{
     height: 100%;
 }
 
+.image img{
+    width: auto;
+    height: calc(100vh - 160px);
+    border-radius: 32px;
+}
+
 .image2{
     display: flex;
     justify-content: center;
@@ -728,23 +773,230 @@ a, p{
 
 .image3{
     display: flex;
-    flex-direction: column;
-    width: fit-content;
-    height: fit-content;
-    justify-content: flex-start;
+    width: 100%;
+    height: 70vh;
+    justify-content: stretch;
     align-items: center;
     gap: 48px;
+    padding: 0;
 }
 
-.image3 section{
-    display: flex;
-    align-items: center;
-    justify-content: stretch;
-    width: 80vw;
-    height: calc(100vh - 64px);
-    object-position: center;
-    object-fit: contain;
+.grid4{
+    display: grid;
+    gap: 48px;
+    width: 100%;
+    height: 60vh;
+}
+
+
+#clothesxomock{
+    background-image: url(Images/clothesxo/mock.png);
+    height: 60vh;
+    width: 100%;
+    background-size: contain;
+    background-position: center center;
     background-repeat: no-repeat;
+}
+
+#immersmock{
+    background-image: url(Images/immers/small_mock.png);
+    height: 60vh;
+    width: 100%;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.poppins{
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.poppins2{
+    font-family: 'Poppins';
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.noto{
+    font-family: 'Noto Sans';
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 64px;
+}
+
+.noto2{
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#clothesxotypography{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    background-color: #500084;
+    height: auto;
+    width: 100%;
+    gap: 24px;
+    grid-area: 1 / 2 / 3 / 4;
+}
+
+#immerstypography{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    background-color: #084f17;
+    height: auto;
+    width: 100%;
+    gap: 24px;
+    grid-area: 1 / 2 / 3 / 4;
+}
+
+#clothesxocolor{
+    background: linear-gradient(
+        to bottom,
+        #222222 0%,
+        #222222 16.7%,
+        #7209B7 16.7%,
+        #7209B7 33.4%,
+        #BFDBF7 33.4%,
+        #BFDBF7 50.1%,
+        #DBC3EA 50.1%,
+        #DBC3EA 66.8%,
+        #FEECE8 66.8%,
+        #FEECE8 83.5%,
+        #FFFFFF 83.5%,
+        #FFFFFF 100%
+    );
+    border: #500084 solid 2px;
+    grid-area: 1 / 1 / 3 / 2;
+    width: 100%;
+    height: 100%;
+}
+
+#immerscolor{
+    background: linear-gradient(
+        to bottom,
+        #222222 0%,
+        #222222 20%,
+        #006E18 20%,
+        #006E18 40%,
+        #787878 40%,
+        #787878 60%,
+        #F2FEFF 60%,
+        #F2FEFF 80%,
+        white 80%,
+        white 100%
+    );
+    border: #084f17 solid 2px;
+    grid-area: 1 / 1 / 3 / 2;
+    width: 100%;
+    height: 100%;
+}
+
+#clothesxoicon{
+    background-image: url(Images/clothesxo/icons.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: fit-content;
+    width: 100%;
+    padding: 24px;
+    grid-area: 3 / 1 / 4 / 4;
+    background-color: #500084;
+}
+
+#immersicon{
+    background-image: url(Images/immers/icons_immers.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: fit-content;
+    width: 100%;
+    padding: 24px;
+    grid-area: 3 / 1 / 4 / 4;
+    background-color: #084f17;
+}
+
+.sticky{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.sticky2{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 64px;
+}
+
+.overflow{
+    overflow-y: scroll;
+}
+
+.snap_type{
+    scroll-snap-type: y mandatory;
+}
+
+.snap_align{
+    scroll-snap-align: start;
+}
+
+.radius{
+    border-radius: 16px;
+}
+
+.prototype{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    padding: 0;
+    gap: 0;
+}
+
+.prototype section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 64px);
+    scroll-snap-align: start;
+    padding: 96px 0;
+    margin: 0;
+}
+
+.prototype section img{
+    width: auto;
+    height: calc(100vh - 160px);
+    scroll-snap-align: start;
+    object-position: center;
+}
+
+.prototype img{
+    width: auto;
+    height: calc(100vh - 160px);
+    scroll-snap-align: start;
+}
+
+.prototype::-webkit-scrollbar{
+    display: none;
+}
+
+.image1 img{
+    width: auto;
+    height: calc(100vh - 160px);
 }
 
 #journey1{
@@ -759,6 +1011,12 @@ a, p{
     background-image: url(Image/holdjourney.png);
 }
 
+#flow{
+    background-image: url(Images/user_flow_clothesxo_desktop.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 .grid1{
     display: grid;
@@ -771,6 +1029,16 @@ a, p{
 
 .grid1 section{
     background-color: #EFF1ED;
+    position: relative;
+}
+
+
+
+.bottom_label{
+    position: absolute;
+    bottom: 0;
+    right: 24px;
+    padding: 8px;
 }
 
 .grid2{
@@ -864,11 +1132,35 @@ a, p{
     color:#FFFFFF
 }
 
+.info_clothesxo{
+    background-image: url(Images/clothesxo/articles.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: calc(100vh - 64px);
+}
+
+.highlight_clothes_xo{
+    font-size: x-small;
+    line-height: 24px;
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    width: 300px;
+
+    padding: 24px;
+}
+
+.immers{
+    background-color: #084f17;
+    color: white;
+}
+
 .white_text{
     color: #FFFFFF;
 }
 
-.case_section1 .case_titles .white_text{
+.case_section1 .case_titles .white_text, .case_section6 .case_titles .white_text{
     color: #FFFFFF;
 }
 
@@ -886,8 +1178,21 @@ a, p{
 }
 
 
+
 .fit{
     height: fit-content;
+}
+
+.fit_screen{
+    height: calc(100vh - 64px);
+}
+
+.align{
+    align-items: start;
+}
+
+.justify{
+    justify-content: center;
 }
 
 #fit1{
@@ -901,6 +1206,43 @@ a, p{
 #fit2{
     height: fit-content;
 }
+
+#show1{
+    color: white;
+}
+
+#show2{
+    color: #222222;
+}
+
+#show3{
+    color: white;
+}
+
+#think, #say, #feel, #do{
+    background-position: center center;
+    padding: 16px;
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+#think{
+    background-image: url(Images/immers/think.png);
+}
+
+#say{
+    background-image: url(Images/immers/say.png);
+}
+
+#feel{
+    background-image: url(Images/immers/feel.png);
+}
+
+#do{
+    background-image: url(Images/immers/do.png);
+}
+
 
  /* 
     
@@ -920,13 +1262,11 @@ a, p{
     }
 
     #works{
-        gap: 72px;
         padding: 48px 0 80px 0;
     }
 
     .section1{
-        padding-left: 5%;
-        padding-right: 5%;
+        padding: 64px 5%;
     }
 
     footer{
@@ -1000,7 +1340,7 @@ a, p{
 
     /*Case Study Template Starts 1024*/
 
-.hero_image{
+.hero_image_clothesxo{
         min-height: calc(100vh - 284px);
 }
 
@@ -1021,6 +1361,10 @@ a, p{
 }
 
 .cards{
+    padding: 0 5vw;
+}
+
+.cards1{
     padding: 0 5vw;
 }
 
@@ -1120,6 +1464,11 @@ a, p{
     color: #FFFFFF;
 }
 
+.immers{
+    background-color: #084f17;
+    color: white;
+}
+
 .padding{
     padding-right: 5vw;
 }
@@ -1128,7 +1477,6 @@ a, p{
     padding-top: 64px;
     padding-bottom: 64px;
 }
-
 
 
 .fit{
@@ -1245,27 +1593,26 @@ a, p{
     }
 
     #works{
-        gap: 56px;
-        padding: 40px 0 56px 0;
+        padding: 40px 0 72px 0;
     }
 
     .section1{
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: stretch;
         align-items: start;
         width: 100vw;
         height: calc(100vh - 64px);
-        padding: 0 5%;
+        padding: 80px 5%;
         gap: 32px;
     }
     
     .section1_background{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: stretch;
         align-items: flex-end;
-        height: fit-content;
+        height: 100%;
         width: 90vw;
         background: linear-gradient(
             to top,
@@ -1288,9 +1635,9 @@ a, p{
     .section1_background1{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: stretch;
         align-items: center;
-        height: fit-content;
+        height: 100%;
         width: 90vw;
         background-color: #373D20;
         padding: 0 5%;
@@ -1464,6 +1811,13 @@ a, p{
         font-weight: 700;
         line-height: 64px;
     }
+
+    #footer_heading{
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 64px;
+        text-align: left;
+    }
     
     h3{
         font-size: 32px;
@@ -1475,7 +1829,7 @@ a, p{
     h4{
         font-size: 16px;
         font-weight: 800;
-        line-height: 24px;
+        line-height: 28px;
     }
 
     h5{
@@ -1491,13 +1845,13 @@ a, p{
         line-height: 32px;
     }
 
-    /*Case Study Template Starts 768px*/
+    /*Case Study Template Starts 900px*/
 
-.hero_image{
+.hero_image_clothesxo{
     max-height: calc(100vh - 264px);
     min-height: calc(100vh - 264px);
     width: 100vw;
-    background-image: url(Image/clothesxo_case_mock.png);
+    background-image: url(Images/clothesxo/mockmobile.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1511,12 +1865,13 @@ a, p{
     justify-content: center;
     padding: 12px 5vw 48px 5vw;
     width: 100vw;
-    max-width: none;
+    max-width: 90vw;
     min-width: fit-content;
 }
 
 .hero_title p{
-    max-width: 400px;
+    width: 90vw;
+    max-width: 90vh;
 }
 
 .case_section5 .hero_title{
@@ -1540,6 +1895,15 @@ a, p{
     width: 100%;
     gap: 24px;
     padding: 0 5vw;
+}
+
+.cards1{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 60vh;
+    padding: 0;
+    background-image: url(Images/clothesxo/solutionsmobile.png);
 }
 
 .cards section{
@@ -1584,8 +1948,21 @@ a, p{
     min-height: none;
 }
 
+#think, #say, #feel, #do{
+    height: 240px;
+}
+
+
 .fit{
     height: fit-content;
+}
+
+.fit_screen{
+    height: fit-content;
+}
+
+.align{
+    align-items: start;
 }
 
 #fit1{
@@ -1594,6 +1971,10 @@ a, p{
 
 #fit2{
     height: fit-content;
+}
+
+.sticky2{
+    position: static;
 }
 
 .case_section2{
@@ -1631,17 +2012,18 @@ a, p{
 
 .image3{
     width: 100%;
-    height: auto;
+    height: 90vh;
     gap: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: stretch;
 }
 
-.image3 section{
+.grid4{
+    display: grid;
+    gap: 56px;
     width: 100%;
-    height: calc(100vh - 64px);
-    object-fit: contain;
-    object-position: center;
-    background-repeat: no-repeat;
-    background-color: aqua;
+    height: 100%;
 }
 
 #journey1{
@@ -1656,6 +2038,12 @@ a, p{
     background-image: url(Image/holdjourneymobile.png);
 }
 
+
+#flow{
+    background-image: url(Images/user_flow_clothesxo_mobile.png);
+}
+
+
 .case_titles{
     position: static;
     padding: 0 5vw 16px 5vw;
@@ -1669,6 +2057,15 @@ a, p{
     padding: 0 0 16px 0;
 }
 
+.case_section6{
+    align-items: flex-start;
+}
+
+.case_section6 .hero_title{
+    text-align: left;
+    max-width: 90vw;
+}
+
 .case_section6 .case_titles{
     padding: 0 0 16px 0;
 }
@@ -1676,7 +2073,6 @@ a, p{
 .case_titles p{
     font-family: 'Urbanist', Arial, sans-serif;
     text-decoration: none;
-    color: #222222;
     font-size: 16px;
     line-height: 20px;
     font-weight: 600;
@@ -1725,8 +2121,40 @@ a, p{
     color: #FFFFFF;
 }
 
+.immers{
+    background-color: #084f17;
+    color: white;
+}
+
 .padding{
     padding-right: 5vw;
+}
+
+.padding3{
+    padding-left: 5vw;
+}
+
+.padding4{
+    padding-top: 80px;
+}
+
+.info_clothesxo{
+    height: 70vh;
+}
+
+.highlight_clothes_xo{
+    font-size: x-small;
+    line-height: 20px;
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    width: 40vw;
+    padding: 24px;
+}
+
+
+#immersicon{
+    background-image: url(Images/immers/small_mockmobile.png);
 }
  /* 
 
@@ -1742,6 +2170,10 @@ a, p{
         min-height: 900px;
     }
 
+
+#think, #say, #feel, #do{
+        height: 300px;
+}
     
     .case_section5{
         min-height: 1200px;
@@ -1756,12 +2188,9 @@ a, p{
         min-width: none;
     }
 
-    .hero_title p{
-        max-width: 320px;
-    }
 
     .case_section6 .hero_title{
-        padding-left: 5vw;
+        padding: 0;
     }
     
     .grid1_item1{
@@ -1811,6 +2240,18 @@ a, p{
     #fit2{
         height: fit-content;
     }
+
+    .grid4{
+        gap: 48px;
+    }
+
+    #clothesxocolor{
+        width: 32px;
+    }
+
+    #immerscolor{
+        width: 32px;
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -1832,13 +2273,16 @@ a, p{
     }
 
     #works{
-        gap: 0;
-        padding: 0;
+        padding: 0 0 64px 0;
     }
 
     .section1{
         gap: 24px;
+        padding: 64px 5%;
+    }
 
+    .padding5{
+        padding-top: 0;
     }
 
     .section2{
@@ -1961,6 +2405,13 @@ a, p{
         font-weight: 700;
         line-height: 32px;
     }
+
+    #footer_heading{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: left;
+    }
     
     h3{
         font-size: 24px;
@@ -2034,6 +2485,11 @@ a, p{
     .clothes_xo{
         background-color: #500084;
         color: #FFFFFF;
+    }
+
+    .immers{
+        background-color: #084f17;
+        color: white;
     }
 
     .white_text{
