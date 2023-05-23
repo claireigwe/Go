@@ -537,6 +537,16 @@ a, p{
     background-position: center;
 }
 
+.hero_image_immers{
+    max-height: calc(100vh - 264px);
+    min-height: calc(100vh - 264px);
+    width: 100vw;
+    background-image: url(Images/immers/immers_case_mock.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .hero_title{
     display: flex;
     flex-direction: column;
@@ -781,6 +791,16 @@ a, p{
     padding: 0;
 }
 
+.image4{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: stretch;
+    align-items: center;
+    gap: 48px;
+    padding: 0;
+}
+
 .grid4{
     display: grid;
     gap: 48px;
@@ -793,7 +813,7 @@ a, p{
     background-image: url(Images/clothesxo/mock.png);
     height: 60vh;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -802,7 +822,7 @@ a, p{
     background-image: url(Images/immers/small_mock.png);
     height: 60vh;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -842,7 +862,6 @@ a, p{
     justify-content: space-between;
     align-items: flex-start;
     text-align: left;
-    background-color: #500084;
     height: auto;
     width: 100%;
     gap: 24px;
@@ -856,7 +875,6 @@ a, p{
     justify-content: space-between;
     align-items: flex-start;
     text-align: left;
-    background-color: #084f17;
     height: auto;
     width: 100%;
     gap: 24px;
@@ -910,11 +928,10 @@ a, p{
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    height: fit-content;
+    height: 100%;
     width: 100%;
     padding: 24px;
     grid-area: 3 / 1 / 4 / 4;
-    background-color: #500084;
 }
 
 #immersicon{
@@ -922,11 +939,10 @@ a, p{
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    height: fit-content;
+    height: 100%;
     width: 100%;
     padding: 24px;
     grid-area: 3 / 1 / 4 / 4;
-    background-color: #084f17;
 }
 
 .sticky{
@@ -1018,6 +1034,13 @@ a, p{
     background-size: contain;
 }
 
+#flow_immers{
+    background-image: url(Images/immers/immers_flow_desktop.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .grid1{
     display: grid;
     justify-content: stretch;
@@ -1071,7 +1094,7 @@ a, p{
 }
 
 .grid2 img{
-    height: 36px;
+    height: 48px;
     width: auto;
 }
 
@@ -1128,7 +1151,7 @@ a, p{
 }
 
 .clothes_xo{
-    background-color: #500084;
+    background-color: #0f0118;
     color:#FFFFFF
 }
 
@@ -1140,7 +1163,16 @@ a, p{
     height: calc(100vh - 64px);
 }
 
-.highlight_clothes_xo{
+.info_immers{
+    background-image: url(Images/immers/article_immers.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: calc(100vh - 64px);
+}
+
+
+.highlight{
     font-size: x-small;
     line-height: 24px;
     position: absolute;
@@ -1152,8 +1184,15 @@ a, p{
 }
 
 .immers{
-    background-color: #084f17;
+    background-color: #010e04;
     color: white;
+}
+
+.immers_mvp{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(Images/immers/immersmvp.png);
 }
 
 .white_text{
@@ -1219,7 +1258,7 @@ a, p{
     color: white;
 }
 
-#think, #say, #feel, #do{
+#think, #think_clothesxo, #say, #say_clothesxo, #feel, #feel_clothesxo, #do, #do_clothesxo{
     background-position: center center;
     padding: 16px;
     background-size: contain;
@@ -1231,16 +1270,32 @@ a, p{
     background-image: url(Images/immers/think.png);
 }
 
+#think_clothesxo{
+    background-image: url(Images/clothesxo/think.png);
+}
+
 #say{
     background-image: url(Images/immers/say.png);
+}
+
+#say_clothesxo{
+    background-image: url(Images/clothesxo/say.png);
 }
 
 #feel{
     background-image: url(Images/immers/feel.png);
 }
 
+#feel_clothesxo{
+    background-image: url(Images/clothesxo/feel.png);
+}
+
 #do{
     background-image: url(Images/immers/do.png);
+}
+
+#do_clothesxo{
+    background-image: url(Images/clothesxo/do.png);
 }
 
 
@@ -1340,7 +1395,7 @@ a, p{
 
     /*Case Study Template Starts 1024*/
 
-.hero_image_clothesxo{
+.hero_image_clothesxo, .hero_image_immers{
         min-height: calc(100vh - 284px);
 }
 
@@ -1460,12 +1515,12 @@ a, p{
 }
 
 .clothes_xo{
-    background-color: #500084;
+    background-color: #0f0118;
     color: #FFFFFF;
 }
 
 .immers{
-    background-color: #084f17;
+    background-color: #010e04;
     color: white;
 }
 
@@ -1477,6 +1532,7 @@ a, p{
     padding-top: 64px;
     padding-bottom: 64px;
 }
+
 
 
 .fit{
@@ -1857,6 +1913,16 @@ a, p{
     background-position: center;
 }
 
+.hero_image_immers{
+    max-height: calc(100vh - 264px);
+    min-height: calc(100vh - 264px);
+    width: 100vw;
+    background-image: url(Images/immers/immers_case_mock_moibile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .hero_title{
     display: flex;
     flex-direction: column;
@@ -2019,6 +2085,15 @@ a, p{
     justify-content: stretch;
 }
 
+.image4{
+    width: 100%;
+    height: 100%;
+    gap: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: stretch;
+}
+
 .grid4{
     display: grid;
     gap: 56px;
@@ -2043,6 +2118,17 @@ a, p{
     background-image: url(Images/user_flow_clothesxo_mobile.png);
 }
 
+#flow_immers{
+    background-image: url(Images/immers/immers_flow_mobile.png);
+}
+
+.immers_mvp{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(Images/immers/immersmvp_mobile.png);
+    height: calc(100vh - 64px);
+}
 
 .case_titles{
     position: static;
@@ -2117,12 +2203,12 @@ a, p{
 }
 
 .clothes_xo{
-    background-color: #500084;
+    background-color: #0f0118;
     color: #FFFFFF;
 }
 
 .immers{
-    background-color: #084f17;
+    background-color: #010e04;
     color: white;
 }
 
@@ -2138,11 +2224,11 @@ a, p{
     padding-top: 80px;
 }
 
-.info_clothesxo{
+.info_clothesxo, .info_immers{
     height: 70vh;
 }
 
-.highlight_clothes_xo{
+.highlight{
     font-size: x-small;
     line-height: 20px;
     position: absolute;
@@ -2483,12 +2569,12 @@ a, p{
     }
     
     .clothes_xo{
-        background-color: #500084;
+        background-color: #0f0118;
         color: #FFFFFF;
     }
 
     .immers{
-        background-color: #084f17;
+        background-color: #010e04;
         color: white;
     }
 
