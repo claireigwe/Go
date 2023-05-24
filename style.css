@@ -531,7 +531,7 @@ a, p{
     max-height: calc(100vh - 264px);
     min-height: calc(100vh - 264px);
     width: 100vw;
-    background-image: url(Images/clothesxo/mock.png);
+    background-image: url(./Images/clothesxo/mock.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -541,7 +541,7 @@ a, p{
     max-height: calc(100vh - 264px);
     min-height: calc(100vh - 264px);
     width: 100vw;
-    background-image: url(Images/immers/immers_case_mock.png);
+    background-image: url(./Images/immers/immers_case_mock.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1907,7 +1907,7 @@ a, p{
     max-height: calc(100vh - 264px);
     min-height: calc(100vh - 264px);
     width: 100vw;
-    background-image: url(Images/clothesxo/mockmobile.png);
+    background-image: url(./Images/clothesxo/mockmobile.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1917,7 +1917,7 @@ a, p{
     max-height: calc(100vh - 264px);
     min-height: calc(100vh - 264px);
     width: 100vw;
-    background-image: url(Images/immers/immers_case_mock_moibile.png);
+    background-image: url(./Images/immers/immers_case_mock_moibile.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
