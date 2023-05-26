@@ -208,8 +208,8 @@ nav a{
         to top,
         #FFFFFF00 0%,
         #FFFFFF00 15%,
-        #373D20 15%,
-        #373D20 85%,
+        #140021 15%,
+        #140021 85%,
         #FFFFFF00 85%,
         #FFFFFF00 100%
     );
@@ -230,7 +230,7 @@ nav a{
     align-items: center;
     width: 100%;
     height: calc(100vh - 64px);
-    background-color:#373D20;
+    background-color:#140021;
 }
 
 .section1_background1 a, .section1_background a{
@@ -271,7 +271,7 @@ nav a{
     align-items: center;
     width: 100%;
     height: 100%;
-    background: #373D20;
+    background: #1c0000;
 }
 
 .section3{
@@ -282,7 +282,7 @@ nav a{
     height: fit-content;
     padding: 72px 0;
     position: relative;
-    background-color: #373D20;
+    background-color: #1c0000;
     color: #FFFFFF;
 }
 
@@ -652,7 +652,7 @@ a, p{
 
 .case_section2{
     height: fit-content;
-    background-color: #373D20;
+    background-color: #1c0000;
     color: #FFFFFF;
     justify-content: stretch;
     padding: 80px 10vw;
@@ -1171,6 +1171,14 @@ a, p{
     height: calc(100vh - 64px);
 }
 
+.info_kipati{
+    background-image: url(Images/kipati/article_kipati.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: calc(100vh - 64px);
+}
+
 
 .highlight{
     font-size: x-small;
@@ -1358,7 +1366,7 @@ a, p{
     }
 
     .section2_background{
-        background-color: #373D20;
+        background-color: #1c0000;
     }
 
     .section2 .banner1{
@@ -1445,7 +1453,7 @@ a, p{
 
 .case_section2{
     height: fit-content;
-    background-color: #373D20;
+    background-color: #1c0000;
     color: #FFFFFF;
     justify-content: stretch;
     padding: 80px 5vw;
@@ -1672,8 +1680,8 @@ a, p{
         width: 90vw;
         background: linear-gradient(
             to top,
-            #373D20 0%,
-            #373D20 75%,
+            #140021 0%,
+            #140021 75%,
             #FFFFFF00 75%,
             #FFFFFF00 100%
         );
@@ -1695,7 +1703,7 @@ a, p{
         align-items: center;
         height: 100%;
         width: 90vw;
-        background-color: #373D20;
+        background-color: #140021;
         padding: 0 5%;
     }
 
@@ -2014,7 +2022,7 @@ a, p{
     min-height: none;
 }
 
-#think, #say, #feel, #do{
+#think, #think_clothesxo, #say, #say_clothesxo, #feel, #feel_clothesxo, #do, #do_clothesxo{
     height: 240px;
 }
 
@@ -2046,7 +2054,7 @@ a, p{
 .case_section2{
     flex-direction: column;
     height: fit-content;
-    background-color: #373D20;
+    background-color: #1c0000;
     color: #FFFFFF;
     justify-content: stretch;
     align-items: flex-start;
@@ -2255,11 +2263,6 @@ a, p{
 .case_section4{
         min-height: 900px;
     }
-
-
-#think, #say, #feel, #do{
-        height: 300px;
-}
     
     .case_section5{
         min-height: 1200px;
