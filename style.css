@@ -527,24 +527,25 @@ a, p{
     height: fit-content;
 }
 
-.hero_image_clothesxo{
+.hero_image_clothesxo, .hero_image_immers, .hero_image_kipati{
     max-height: calc(100vh - 264px);
     min-height: calc(100vh - 264px);
     width: 100vw;
-    background-image: url(./Images/clothesxo/mock.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .hero_image_immers{
-    max-height: calc(100vh - 264px);
-    min-height: calc(100vh - 264px);
-    width: 100vw;
     background-image: url(./Images/immers/immers_case_mock.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+.hero_image_clothesxo{
+    background-image: url(./Images/clothesxo/mock.png);
+}
+
+.hero_image_kipati{
+    background-image: url(./Images/kipati/kipati_case_mock.png);
 }
 
 .hero_title{
@@ -734,7 +735,10 @@ a, p{
 
 .text1{
     max-width: 600px;
-    
+}
+
+.limit_width{
+    max-width: 480px;
 }
 
 .text2{
@@ -1155,6 +1159,16 @@ a, p{
     color:#FFFFFF
 }
 
+.kipati{
+    background-color: #060505;
+    color: white;
+}
+
+.grid2 section .full_width{
+    width: 100%;
+    height: auto;
+}
+
 .info_clothesxo{
     background-image: url(Images/clothesxo/articles.png);
     background-position: center center;
@@ -1403,9 +1417,10 @@ a, p{
 
     /*Case Study Template Starts 1024*/
 
-.hero_image_clothesxo, .hero_image_immers{
+.hero_image_clothesxo, .hero_image_immers, .hero_image_kipati{
         min-height: calc(100vh - 284px);
 }
+
 
 .hero_title{
     max-width: 680px;
@@ -1529,6 +1544,11 @@ a, p{
 
 .immers{
     background-color: #010e04;
+    color: white;
+}
+
+.kipati{
+    background-color: #060505;
     color: white;
 }
 
@@ -2220,6 +2240,23 @@ a, p{
     color: white;
 }
 
+.kipati{
+    background-color: #060505;
+    color: white;
+}
+
+.hero_image_immers{
+    background-image: url(./Images/immers/immers_case_mock_moibile.png);
+}
+
+.hero_image_clothesxo{
+    background-image: url(./Images/clothesxo/mockmobile.png);
+}
+
+.hero_image_kipati{
+    background-image: url(./Images/kipati/kipati_case_mock_moibile.png);
+}
+
 .padding{
     padding-right: 5vw;
 }
@@ -2581,9 +2618,15 @@ a, p{
         color: white;
     }
 
+    .kipati{
+        background-color: #060505;
+        color: white;
+    }
+
     .white_text{
         color: #FFFFFF;
     }
+
     
     .fit{
         height: fit-content;
