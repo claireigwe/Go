@@ -1033,7 +1033,7 @@ a, p{
 
 .prototype section, .prototype section{
     display: flex;
-    justify-content: stretch;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: calc(100vh - 64px);
@@ -2391,6 +2391,10 @@ a, p{
     background-color: white;
 }
 
+.padding4{
+    padding-top: 64px;
+}
+
 
 
  /* 
@@ -2498,6 +2502,11 @@ a, p{
     .hero_title .limit_width2{
         max-width: 70%;
     }
+
+    .padding4{
+        padding-top: 64px;
+    }
+
 }
 
 @media screen and (max-width: 430px) {
@@ -2762,6 +2771,10 @@ a, p{
 
     .whitebackground{
         background-color: white;
+    }
+
+    .padding4{
+        padding-top: 64px;
     }
 
     /*Case Study Template Ends *430px*/
