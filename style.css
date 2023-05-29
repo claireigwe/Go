@@ -282,7 +282,7 @@ nav a{
     height: fit-content;
     padding: 72px 0;
     position: relative;
-    background-color: #1c0000;
+    background-color: #140021;
     color: #FFFFFF;
 }
 
@@ -745,6 +745,8 @@ a, p{
 .limit_width{
     max-width: 480px;
 }
+
+
 
 .text2{
     width: 500px;
@@ -2385,6 +2387,10 @@ a, p{
     padding: 24px;
 }
 
+.whitebackground{
+    background-color: white;
+}
+
 
 
  /* 
@@ -2418,6 +2424,8 @@ a, p{
     .case_section6 .hero_title{
         padding: 0;
     }
+
+    
     
     .grid1_item1{
         grid-area: 1 / 1 / 2 / 2;
@@ -2481,6 +2489,14 @@ a, p{
 
     #kipaticolor{
         width: 32px;
+    }
+
+    .whitebackground{
+        background-color: white;
+    }
+
+    .hero_title .limit_width2{
+        max-width: 70%;
     }
 }
 
@@ -2743,6 +2759,10 @@ a, p{
     #fit2{
         height: fit-content;
     }
-    
+
+    .whitebackground{
+        background-color: white;
+    }
+
     /*Case Study Template Ends *430px*/
 }
