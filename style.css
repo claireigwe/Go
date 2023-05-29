@@ -578,20 +578,25 @@ a, p{
     padding: 0 10vw;
 }
 
-.cards1{
+.cards1, .cards2{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 85vh;
     width: 100vw;
     padding: 0 10vw;
-    gap: 48px;
-    background-image: url(Images/clothesxo/solutions.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
 }
 
+.cards1{
+    background-image: url(Images/clothesxo/solutions.png);
+}
+
+.cards2{
+    background-image: url(Images/kipati/solution.png);
+}
 
 .cards section{
     display: flex;
@@ -813,8 +818,7 @@ a, p{
 }
 
 
-#clothesxomock{
-    background-image: url(Images/clothesxo/mock.png);
+#clothesxomock, #immersmock, #kipatimock{
     height: 60vh;
     width: 100%;
     background-size: cover;
@@ -824,11 +828,14 @@ a, p{
 
 #immersmock{
     background-image: url(Images/immers/small_mock.png);
-    height: 60vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+}
+
+#clothesxomock{
+    background-image: url(Images/clothesxo/mock.png);
+}
+
+#kipatimock{
+    background-image: url(Images/kipati/kipati_case_mock.png);
 }
 
 .poppins{
@@ -858,6 +865,21 @@ a, p{
     font-size: 14px;
     line-height: 18px;
 }
+
+.cabin{
+    font-family: 'Cabin';
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.cabin2{
+    font-family: 'Cabin';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
 
 #clothesxotypography{
     display: flex;
@@ -927,6 +949,28 @@ a, p{
     height: 100%;
 }
 
+#kipaticolor{
+    background: linear-gradient(
+        to bottom,
+        #080408 0%,
+        #080408 16.7%,
+        #231123 16.7%,
+        #231123 33.3%,
+        #00d7FF 33.3%,
+        #00d7ff 50%,
+        #F1F2F2 50%,
+        #F1F2F2 66.7%,
+        #F4F3F4 66.7%,
+        #F4F3F4 83.3%,
+        white 83.3%,
+        white 100%
+    );
+    border: white solid 2px;
+    grid-area: 1 / 1 / 3 / 2;
+    width: 100%;
+    height: 100%;
+}
+
 #clothesxoicon{
     background-image: url(Images/clothesxo/icons.png);
     background-size: contain;
@@ -940,6 +984,17 @@ a, p{
 
 #immersicon{
     background-image: url(Images/immers/icons_immers.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    padding: 24px;
+    grid-area: 3 / 1 / 4 / 4;
+}
+
+#kipatiicon{
+    background-image: url(Images/kipati/icon.png);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -977,18 +1032,19 @@ a, p{
     border-radius: 16px;
 }
 
-.prototype{
+.prototype, .prototype2{
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     align-items: center;
     padding: 0;
     gap: 0;
+    scroll-snap-type: y mandatory;
 }
 
-.prototype section{
+.prototype section, .prototype section{
     display: flex;
-    justify-content: center;
+    justify-content: stretch;
     align-items: center;
     width: 100%;
     height: calc(100vh - 64px);
@@ -1004,13 +1060,33 @@ a, p{
     object-position: center;
 }
 
+.prototype2 section img{
+    width: 100%;
+    height: auto;
+    scroll-snap-align: start;
+    object-position: center;
+    border: rgb(130, 130, 130) 16px solid;
+    border-radius: 8px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.right_space{
+    padding-right: 10vw;
+}
+
+.left_space{
+    padding-left: 10vw;
+}
+
+
 .prototype img{
     width: auto;
     height: calc(100vh - 160px);
     scroll-snap-align: start;
 }
 
-.prototype::-webkit-scrollbar{
+.prototype::-webkit-scrollbar, .prototype2::-webkit-scrollbar{
     display: none;
 }
 
@@ -1217,6 +1293,10 @@ a, p{
     background-image: url(Images/immers/immersmvp.png);
 }
 
+.whitebackground{
+    background-color: white;
+}
+
 .white_text{
     color: #FFFFFF;
 }
@@ -1238,6 +1318,11 @@ a, p{
     padding-bottom: 80px;
 }
 
+
+.case_section5 .paragraph_spaced{
+    padding-top: 80px;
+    padding-bottom: 0x;
+}
 
 
 .fit{
@@ -1442,7 +1527,7 @@ a, p{
     padding: 0 5vw;
 }
 
-.cards1{
+.cards1, .cards2{
     padding: 0 5vw;
 }
 
@@ -1991,13 +2076,20 @@ a, p{
     padding: 0 5vw;
 }
 
-.cards1{
+.cards1, .cards2{
     display: flex;
     align-items: flex-start;
     width: 100%;
     height: 60vh;
     padding: 0;
+}
+
+.cards1{
     background-image: url(Images/clothesxo/solutionsmobile.png);
+}
+
+.cards2{
+    background-image: url(Images/kipati/solutionmobile.png);
 }
 
 .cards section{
@@ -2284,9 +2376,7 @@ a, p{
 }
 
 
-#immersicon{
-    background-image: url(Images/immers/small_mockmobile.png);
-}
+
  /* 
 
     */
@@ -2376,6 +2466,10 @@ a, p{
     }
 
     #immerscolor{
+        width: 32px;
+    }
+
+    #kipaticolor{
         width: 32px;
     }
 }
