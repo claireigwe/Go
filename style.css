@@ -881,20 +881,7 @@ a, p{
 }
 
 
-#clothesxotypography{
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
-    height: auto;
-    width: 100%;
-    gap: 24px;
-    grid-area: 1 / 2 / 3 / 4;
-}
-
-#immerstypography{
+#typography{
     display: flex;
     flex-direction: column;
     padding: 24px;
@@ -2320,6 +2307,29 @@ a, p{
 
 .grid2 section{
     padding: 24px;
+}
+
+#hi_fi_kipati{
+    padding: 0 5vw;
+}
+
+.prototype2 section img{
+    width: 100%;
+    height: auto;
+    scroll-snap-align: start;
+    object-position: center;
+    border: rgb(130, 130, 130) 16px solid;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.right_space{
+    padding-right: 5vw;
+}
+
+.left_space{
+    padding-left: 10vw;
 }
 
 .clothes_xo{
