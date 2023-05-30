@@ -306,6 +306,17 @@ nav a{
     height: 64px;
 }
 
+@keyframes slider_loop {
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(-100%);}
+}
+
+@keyframes slider_loop2 {
+    0%{transform: translateX(100%); opacity: 0;}
+    1%{opacity: 1;}
+    100%{transform: translateX(-100%);}
+}
+
 #teams2{
     display: flex;
     justify-content: center;
@@ -314,11 +325,27 @@ nav a{
     width: fit-content;
     overflow-x: hidden;
     gap: 104px;
+    white-space: nowrap;
+    animation: slider_loop 25s linear infinite;
 }
 
-#teams2 img{
+#teams3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    overflow-x: hidden;
+    gap: 104px;
+    white-space: nowrap;
+    animation: slider_loop2 25s linear 25 infinite;
+}
+
+#teams2 img, #team3 img{
     height: 48px;
 }
+
+
 
 footer{
     display: flex;
@@ -2787,6 +2814,7 @@ a, p{
 .enter_and_leave{
     animation: anima1 2s ease-in 0s 1;
 }
+
 
 @keyframes anima2 {
     0%{opacity: 0;}
