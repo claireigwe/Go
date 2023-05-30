@@ -2378,12 +2378,12 @@ a, p{
 }
 
 .highlight{
-    font-size: x-small;
-    line-height: 20px;
+    font-size: large;
+    line-height: 36px;
     position: absolute;
     bottom: 32px;
     right: 32px;
-    width: 40vw;
+    width: 90vw;
     padding: 24px;
 }
 
