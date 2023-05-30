@@ -15,7 +15,6 @@ body{
     position: relative;
 }
 
-
 header, body{
     height: fit-content;
     width: max-content;
@@ -208,8 +207,8 @@ nav a{
         to top,
         #FFFFFF00 0%,
         #FFFFFF00 15%,
-        #140021 15%,
-        #140021 85%,
+        #003e2a 15%,
+        #003e2a 85%,
         #FFFFFF00 85%,
         #FFFFFF00 100%
     );
@@ -230,7 +229,7 @@ nav a{
     align-items: center;
     width: 100%;
     height: calc(100vh - 64px);
-    background-color:#140021;
+    background-color:#003e2a;
 }
 
 .section1_background1 a, .section1_background a{
@@ -271,7 +270,7 @@ nav a{
     align-items: center;
     width: 100%;
     height: 100%;
-    background: #1c0000;
+    background: #003e2a;
 }
 
 .section3{
@@ -282,7 +281,7 @@ nav a{
     height: fit-content;
     padding: 72px 0;
     position: relative;
-    background-color: #140021;
+    background-color: #003e2a;
     color: #FFFFFF;
 }
 
@@ -445,13 +444,13 @@ footer{
     width: 50vw;
     max-width: 900px;
     height: 60vh;
-    background-color: #Eff1ed;
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 5;
     mix-blend-mode: multiply;
 }
+
 
 .grey{
     color: grey;
@@ -658,7 +657,7 @@ a, p{
 
 .case_section2{
     height: fit-content;
-    background-color: #1c0000;
+    background-color: #003e2a;
     color: #FFFFFF;
     justify-content: stretch;
     padding: 80px 10vw;
@@ -1454,7 +1453,7 @@ a, p{
     }
 
     .section2_background{
-        background-color: #1c0000;
+        background-color: #003e2a;
     }
 
     .section2 .banner1{
@@ -1542,7 +1541,7 @@ a, p{
 
 .case_section2{
     height: fit-content;
-    background-color: #1c0000;
+    background-color: #003e2a;
     color: #FFFFFF;
     justify-content: stretch;
     padding: 80px 5vw;
@@ -1774,8 +1773,8 @@ a, p{
         width: 90vw;
         background: linear-gradient(
             to top,
-            #140021 0%,
-            #140021 75%,
+            #003e2a 0%,
+            #003e2a 75%,
             #FFFFFF00 75%,
             #FFFFFF00 100%
         );
@@ -1797,7 +1796,7 @@ a, p{
         align-items: center;
         height: 100%;
         width: 90vw;
-        background-color: #140021;
+        background-color: #003e2a;
         padding: 0 5%;
     }
 
@@ -2155,7 +2154,7 @@ a, p{
 .case_section2{
     flex-direction: column;
     height: fit-content;
-    background-color: #1c0000;
+    background-color: #003e2a;
     color: #FFFFFF;
     justify-content: stretch;
     align-items: flex-start;
@@ -2778,4 +2777,26 @@ a, p{
     }
 
     /*Case Study Template Ends *430px*/
+}
+
+@keyframes anima1 {
+    0%{transform: translateY(30%); opacity: 0;}
+    100%{transform: translateY(0); opacity: 1;}
+}
+
+.enter_and_leave{
+    animation: anima1 2s ease-in 0s 1;
+}
+
+@keyframes anima2 {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.fade{
+    animation: anima2 2s ease-in 0s 1;
+}
+
+.fade_slower{
+    animation: anima2 1s ease-in 0s 1;
 }
