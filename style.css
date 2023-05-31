@@ -306,14 +306,26 @@ nav a{
     height: 64px;
 }
 
-@keyframes slider_loop {
-    0%{transform: translateX(100%);}
-    100%{transform: translateX(-100%);}
+/*@keyframes slider {
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-1400%);}
 }
 
-@keyframes slider_loop2 {
-    0%{transform: translateX(100%); opacity: 0;}
-    1%{opacity: 1;}
+.slide{
+    animation: slider 10.5s steps(14) infinite backwards;
+}
+
+@keyframes slider7 {
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-700%);}
+}
+
+.slide7{
+    animation: slider7 5.25s steps(7) infinite backwards;
+}*/
+
+@keyframes slider_loop {
+    0%{transform: translateX(100%);}
     100%{transform: translateX(-100%);}
 }
 
@@ -326,25 +338,13 @@ nav a{
     overflow-x: hidden;
     gap: 104px;
     white-space: nowrap;
-    animation: slider_loop 25s linear infinite;
-}
+    animation: slider_loop 20s linear infinite;
 
-#teams3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    width: fit-content;
-    overflow-x: hidden;
-    gap: 104px;
-    white-space: nowrap;
-    animation: slider_loop2 25s linear 25 infinite;
 }
 
 #teams2 img, #team3 img{
     height: 48px;
 }
-
 
 
 footer{
