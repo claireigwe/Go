@@ -13,6 +13,7 @@ body{
     background-color: #FDFFFF;
     color: #222222;
     position: relative;
+    color-scheme: dark light;
 }
 
 header, body{
@@ -1947,9 +1948,9 @@ a, p{
         width: fit-content;
         position: absolute;
         top: 40vh;
-        background-color: #080408;
         gap: 0;
         padding: 0;
+        z-index: 2;
     }
 
 
@@ -1961,26 +1962,25 @@ a, p{
         background-size: cover;
     }
 
-    #hero_mock section:nth-of-type(1){
+    .hero #hero_mock section:nth-of-type(1){
         background-image: url(Images/kipati/kipati_case_mock_moibile.png);
     }
     
-    #hero_mock section:nth-of-type(2){
+    .hero #hero_mock section:nth-of-type(2){
         background-image: url(Images/clothesxo/mockmobile.png);
     }
     
-    #hero_mock section:nth-of-type(3){
+    .hero #hero_mock section:nth-of-type(3){
         background-image: url(Images/immers/immers_case_mock_moibile.png);
     }
 
-   @keyframes slider3 {
+   @keyframes slider4 {
         0%{transform: translateX(0);}
-        100%{transform: translateX(-300vw);}
+        100%{transform: translateX(300vw);}
     }
     
     .slide3{
-        animation: slider3 6s steps(3) backwards infinite;
-        display: none;
+        animation: slider4 9s steps(3) backwards infinite;
     }
 
     #works{
