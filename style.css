@@ -10,7 +10,7 @@ body{
     justify-content: space-between;
     gap: 0;
     overflow-x: hidden;
-    background-color: #FDFFFF;
+    background-color: #FEFEFE;
     color: #222222;
     position: relative;
     color-scheme: dark light;
@@ -98,7 +98,7 @@ nav{
     position:fixed;
     bottom: 0px;
     right: 16px;
-    background-color: #FDFFFF;
+    background-color: #FEFEFE;
     color: #222222;
 }
 
@@ -131,7 +131,7 @@ nav{
     align-items: flex-start;
     width: 100vw;
     height: fit-content;
-    background: #FDFFFF;
+    background: #FEFEFE;
     color: #222222;
     margin-top: 72px;
     z-index: 1;
@@ -162,11 +162,11 @@ nav{
     height: 75%;
     max-height: 720px;
     max-width: 660px;
-    background: #fdffff;
+    background: #FEFEFE;
     z-index: 3;
 }
 
-.hero #hero_mock{
+.hero #hero_mock, .hero #hero_mock1{
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -185,6 +185,14 @@ nav{
     background-repeat: no-repeat;
 }
 
+#hero_mock1 section{
+    width: 100%;
+    height: calc(100vh - 64px);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 #hero_mock section:nth-of-type(1){
     background-image: url(Images/kipati/kipati_case_mock.png);
 }
@@ -195,6 +203,18 @@ nav{
 
 #hero_mock section:nth-of-type(3){
     background-image: url(Images/immers/immers_case_mock.png);
+}
+
+#hero_mock1 section:nth-of-type(1){
+    background-image: url(Images/556A7070.jpg);
+}
+
+#hero_mock1 section:nth-of-type(2){
+    background-image: url(Images/556A7079.jpg);
+}
+
+#hero_mock1 section:nth-of-type(3){
+    background-image: url(Images/556A7084.jpg);
 }
 
 
@@ -422,7 +442,7 @@ footer{
     gap: 80px;
     position: relative;
     color: #222222;
-    background-color: #fdffff;
+    background-color: #FEFEFE;
     z-index: 7;
 }
 
@@ -497,7 +517,7 @@ footer{
     width: fit-content;
     height: fit-content;
     padding: 2px 8px;
-    background: #EFF1ED;
+    background: #f7f7f7;
     text-align: left;
     border-radius: 8px;
     font-size: 14px;
@@ -512,7 +532,7 @@ footer{
     width: 45vw;
     max-width: 600px;
     height: 30vh;
-    background-color: #EFF1ED;
+    background-color: #f7f7f7;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -524,7 +544,7 @@ footer{
     width: 40vw;
     max-width: 540px;
     height: 20%;
-    background-color: #Eff1ed;
+    background-color: #f7f7f7;
     position: absolute;
     top: 0;
     right: 0;
@@ -699,7 +719,7 @@ a, p{
     width: 216px;
     padding: 16px;
     gap: 12px;
-    background-color: #EFF1ED;
+    background-color: #f7f7f7;
 }
 
 
@@ -721,6 +741,29 @@ a, p{
     height: calc(100vh - 64px);
     width: 100vw;
     position: relative;
+}
+
+.case_section7{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10vw;
+    height: fit-content;
+    width: 100vw;
+    position: relative;
+    gap: 80px;
+}
+
+.bio_sections{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    gap: 32px;
 }
 
 .case_section5 .hero_title{
@@ -764,7 +807,7 @@ a, p{
     align-items: center;
     justify-content: stretch;
     gap: 32px;
-    display: relative;
+    position: relative;
 }
 
 .case_section6 .hero_title{
@@ -821,6 +864,17 @@ a, p{
     padding-right: 10vw;
     width: fit-content;
     max-width: 600px;
+}
+
+.text5{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    width: 70vw;
+    max-width: 720px;
+    height: 100%;
+    text-align: left;
 }
 
 
@@ -1211,7 +1265,7 @@ a, p{
 }
 
 .grid1 section{
-    background-color: #EFF1ED;
+    background-color: #f7f7f7;
     position: relative;
 }
 
@@ -1233,7 +1287,7 @@ a, p{
 }
 
 .grid2 section{
-    background-color: #EFF1ED;
+    background-color: #f7f7f7;
     padding: 8px 24px;
     display: flex;
     flex-direction: column;
@@ -1404,7 +1458,9 @@ a, p{
     padding-bottom: 0x;
 }
 
-
+.paragraph_limit{
+    width: 90%;
+}
 .fit{
     height: fit-content;
 }
@@ -1940,7 +1996,7 @@ a, p{
         padding: 104px 64px 64px 5vw;
     }
 
-    .hero #hero_mock{
+    .hero #hero_mock, .hero #hero_mock1{
         display: flex;
         flex-direction: row;
         justify-content: start;
@@ -1962,6 +2018,14 @@ a, p{
         background-size: cover;
     }
 
+    .hero #hero_mock1 section{
+        width: 100vw;
+        height: 60vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
     .hero #hero_mock section:nth-of-type(1){
         background-image: url(Images/kipati/kipati_case_mock_moibile.png);
     }
@@ -1972,6 +2036,18 @@ a, p{
     
     .hero #hero_mock section:nth-of-type(3){
         background-image: url(Images/immers/immers_case_mock_moibile.png);
+    }
+
+    .hero #hero_mock1 section:nth-of-type(1){
+        background-image: url(Images/556A7070.jpg);
+    }
+    
+    .hero #hero_mock1 section:nth-of-type(2){
+        background-image: url(Images/556A7079.jpg);
+    }
+    
+    .hero #hero_mock1 section:nth-of-type(3){
+        background-image: url(Images/556A7084.jpg);
     }
 
    @keyframes slider4 {
@@ -2169,7 +2245,7 @@ a, p{
         width: 40vw;
         max-width: 320px;
         height: 160px;
-        background-color: #Eff1ed;
+        background-color: #f7f7f7;
     }
 
     #case_titles{
@@ -2184,7 +2260,7 @@ a, p{
         width: fit-content;
         height: fit-content;
         padding: 2px 8px;
-        background: #eff1ed;
+        background: #f7f7f7;
         text-align: left;
         border-radius: 8px;
         font-size: 12px;
@@ -2326,7 +2402,7 @@ a, p{
     text-align: left;
     padding: 16px;
     gap: 16px;
-    background-color: #EFF1ED;
+    background-color: #f7f7f7;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -2887,7 +2963,7 @@ a, p{
         width: 40vw;
         max-width: 240px;
         height: 104px;
-        background-color: #Eff1ed;
+        background-color: #f7f7f7;
     }
 
     #case_titles{
