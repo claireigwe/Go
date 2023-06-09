@@ -166,6 +166,7 @@ nav{
     z-index: 3;
 }
 
+
 .hero #hero_mock, .hero #hero_mock1{
     display: flex;
     flex-direction: column;
@@ -177,9 +178,6 @@ nav{
     top: 0;
 }
 
-#image_mock, #image_mock1{
-    display: none;
-}
 
 #hero_mock section{
     width: 100%;
@@ -1988,16 +1986,25 @@ a, p{
         flex-direction: column;
         align-items: start;
         padding: 0;
-        height: fit-content;
+        width: 100vw;
+        height: calc(100vh - 64px);
         overflow-x: hidden;
-        position: static;
+        position: relative;
     }
     
     .hero_container{
         align-items: start;
         width: 100%;
         height: fit-content;
-        padding: 104px 64px 64px 5vw;
+        padding: 80px 64px 64px 5vw;
+        max-width: 100%;
+    }
+
+    .hero_container section{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        height: fit-content;
     }
 
     .hero #hero_mock{
@@ -2005,35 +2012,27 @@ a, p{
         flex-direction: row;
         justify-content: start;
         height: 60vh;
-        width: 100%;
+        width: fit-content;
         gap: 0;
         padding: 0;
-        z-index: 2;
+        z-index: 1;
+        position: absolute;
+        top: 40vh;
     }
 
     .hero #hero_mock1{
-        display: none;
-    }
-
-
-    
-    #image_mock, #image_mock1{
-        display: none;
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         justify-content: start;
-        height: 70vh;
-        width: 90vw;
+        height: 60vh;
+        width: fit-content;
+        gap: 0;
         padding: 0;
-        overflow-y: hidden;
+        z-index: 1;
+        position: absolute;
+        top: 50vh;
     }
 
-    #image_mock section, #image_mock1 section{
-        width: 90vw;
-        height: 70vh;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 
     .case_section7{
         padding: 64px 5vw;
@@ -2062,7 +2061,7 @@ a, p{
         height: 60vh;
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
 
     .hero #hero_mock1 section{
@@ -2074,7 +2073,7 @@ a, p{
     }
 
     .hero #hero_mock section:nth-of-type(1){
-        background-image: url(Images/kipati/kipati_case_mock_moibile.png);
+        background-image: url(Images/kipati/kipati_case_mock.png);
     }
     
     .hero #hero_mock section:nth-of-type(2){
@@ -2082,7 +2081,7 @@ a, p{
     }
     
     .hero #hero_mock section:nth-of-type(3){
-        background-image: url(Images/immers/immers_case_mock_moibile.png);
+        background-image: url(Images/immers/immers_case_mock.png);
     }
 
     .hero #hero_mock1 section:nth-of-type(1){
@@ -2097,17 +2096,6 @@ a, p{
         background-image: url(Images/556A7084.jpg);
     }
 
-    #image_mock section:nth-of-type(1), #image_mock1 section:nth-of-type(1){
-        background-image: url(Images/556A7070.jpg);
-    }
-    
-    #image_mock section:nth-of-type(2), #image_mock1 section:nth-of-type(2){
-        background-image: url(Images/556A7079.jpg);
-    }
-    
-    #image_mock section:nth-of-type(3), #image_mock1section:nth-of-type(3){
-        background-image: url(Images/556A7084.jpg);
-    }
 
    @keyframes slider4 {
         0%{transform: translateX(0);}
@@ -2341,7 +2329,7 @@ a, p{
     h1{
         font-size: 48px;
         font-weight: 700;
-        line-height: 72px;
+        line-height: 80px;
         padding-bottom: 24px;
     }
 
@@ -2910,7 +2898,8 @@ a, p{
     .hero_container{
         align-items: start;
         width: 90vw;
-        height: 60%;
+        padding: 64px 64px 48px 5vw;
+        height: fit-content;
     }
 
     #works{
@@ -3042,7 +3031,7 @@ a, p{
     h1{
         font-size: 32px;
         font-weight: 700;
-        line-height: 48px;
+        line-height: 56px;
         padding-bottom: 16px;
     }
 
@@ -3068,9 +3057,9 @@ a, p{
 
 
     a, p{
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
-        line-height: 28px;
+        line-height: 32px;
     }
 
     /*Case Study Template Starts *430px*/
@@ -3149,12 +3138,6 @@ a, p{
 
     .paragraph_limit{
         width: 90vw;
-    }
-
-    .paragraph_limit h2{
-        font-size: 40px;
-        line-height: 60px;
-        font-weight: 700px;
     }
 
     
