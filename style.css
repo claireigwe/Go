@@ -1896,7 +1896,11 @@ a, p{
 
 
 @media screen and (max-width:900px) {
-                
+    body{
+        overflow-x: hidden;
+    }
+
+
     nav{
         flex-direction: column;
         justify-content: start;
@@ -2776,6 +2780,10 @@ a, p{
 
 @media screen and (max-width: 500px) {
 
+body{
+    overflow-x: hidden;
+}
+
 .case_section4{
         min-height: 900px;
     }
@@ -2880,6 +2888,10 @@ a, p{
 
 @media screen and (max-width: 430px) {
     
+    body{
+        overflow-x: hidden;
+    }
+
     #menu_container{
         height: calc(100vh - 64px);
     }
