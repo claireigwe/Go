@@ -1937,7 +1937,7 @@ a, p{
         display: flex;
         flex-direction: column;
         justify-content: start;
-        height: 60vh;
+        height: calc(100vh - 64px);
         gap: 64px;
         padding: 10% 0;
     }
